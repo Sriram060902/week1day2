@@ -1,0 +1,20 @@
+// Assignment: Reverse a string and check if it's a palindrome
+
+let originalWord = "madam"; // You can change this to test other words like "level" or "hello"
+
+let characters = originalWord.split("");
+
+
+let reversedWord = "";
+
+for (let i = characters.length - 1; i >= 0; i--) {
+  reversedWord += characters[i];
+}
+
+console.log("Reversed Word:", reversedWord);
+
+if (originalWord === reversedWord) {
+  console.log("It’s a palindrome!");
+} else {
+  console.log("Not a palindrome!");
+}
